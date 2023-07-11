@@ -1,3 +1,57 @@
-body {
-    background-color: skyblue;
+* {
+  box-sizing: border-box;
 }
+
+body {
+    flex-direction:  ;
+}
+
+h1 {
+    background-color: rgb(77, 186, 219);
+    color: rgb(43, 43, 56);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    flex-direction: row;
+    padding: 5px;
+    background-color: rgb(43, 43, 56);
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none;
+    font-size: larger;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+  }
+
+  nav a {
+    color: #68b7d6;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  }
+
+  
