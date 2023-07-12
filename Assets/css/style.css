@@ -14,7 +14,7 @@ h1 {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
     flex-direction: row;
@@ -22,10 +22,44 @@ header {
     background-color: rgb(43, 43, 56);
 }
 
+.flex-boxes {
+  display: flex;
+}
+
+.box1 {
+  background-image: url("https://www.thoughtco.com/thmb/g8h6NnWWWVkm-KXNBgMx-0Edd2U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages_482194715-56a1329e5f9b58b7d0bcf666.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.box2, .box3, .box4, .box5 {
+  flex-basis: 45%;
+  display: block;
+  background-image: url("https://www.thoughtco.com/thmb/g8h6NnWWWVkm-KXNBgMx-0Edd2U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages_482194715-56a1329e5f9b58b7d0bcf666.jpg");
+  background-size: cover;
+} 
+
+.box2, .box4 {
+  margin-right: 10%;
+}
+
+.section-title {
+  flex-basis: 10%;
+}
+
+.work-container {
+  flex-basis: 90%;
+}
+
 p {
   display: flex;
   justify-content: right;
   margin-right: 10px;
+}
+
+.nav-links {
+  padding-right: 10%;
 }
 
 aside {
@@ -45,6 +79,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 400px;
+    margin-right: 50%;
   }
 
   nav a {
@@ -53,6 +88,12 @@ nav ul {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-position: under;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
   }
 
  
