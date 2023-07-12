@@ -3,7 +3,8 @@
 }
 
 body {
-    flex-direction:  ;
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0;
 }
 
 h1 {
@@ -19,6 +20,12 @@ header {
     flex-direction: row;
     padding: 5px;
     background-color: rgb(43, 43, 56);
+}
+
+p {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
 }
 
 aside {
@@ -47,11 +54,19 @@ nav ul {
     text-decoration-thickness: 3px;
     text-underline-position: under;
   }
+
+ 
   
-  @media screen and (max-width: 768px) {
-    header, main {
-      flex-direction: column;
+  /* @media screen and (max-width: 992px) {
+    body {
+      background: #772014;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  } */
 
   
