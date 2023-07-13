@@ -179,6 +179,13 @@ aside {
   margin-left: auto;
 }
 
+.box2, .box4 {
+  margin-right: auto;
+}
+.box3, .box5 {
+  margin-left: 100px;
+}
+
 p {
   display: flex;
   justify-content: right;
