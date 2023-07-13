@@ -84,11 +84,14 @@ header nav ul li {
   margin: 0 0 3px 50px;
   flex: 0 0 10px;
   text-align: right;
+  text-decoration-line: underline;
 }
 
 aside {
-  text-align: end;
+  display: flex;
+  text-align: right;
   justify-content: right;
+  max-width: 70%;
 }
 
 .flex-boxes {
@@ -97,37 +100,8 @@ aside {
   flex-direction: row;
 }
 
-.work-container {
-  display: inline-block;
-}
-
-.about-texts {
-  flex: 0 0 30%;
-  align-content: right;
-}
-
-.links {
-  align-self: center;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 700px;
-}
-
-.links address a {
-  padding: 5px;
-  text-decoration: none;
-  font-size: normal;
-  color: var(--third-color);
-  font-size: 20px;
-  border-bottom: 3px solid;
-  line-height: 1.5;
+.flex-boxes h3 {
+  text-decoration: underline;
 }
 
 .work-container {
@@ -157,39 +131,44 @@ aside {
   font-size: 14px;
 }
 
+
 .box1 {
+  flex-basis: 80%;
+  width: 100%;
   background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470");
+
 }
 
 .box2 {
   background-image: url("https://www.thoughtco.com/thmb/g8h6NnWWWVkm-KXNBgMx-0Edd2U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages_482194715-56a1329e5f9b58b7d0bcf666.jpg");
+  flex-basis: 100%;
 }
 
 .box3 {
   background-image: url("https://media.istockphoto.com/id/1367756031/vector/light-blue-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=qiJl7j-2terwHd-1YJxiFIo1VJx6l6IsmoqlgeypQ7c=");
-  
+  flex-basis: 100%;
 }
 
 .box4 {
   background-image: url("https://images.unsplash.com/photo-1614850523060-8da1d56ae167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  flex-basis: 100%;
 }
 
 .box5 {
   background-image: url("https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg");
-  margin-left: auto;
+  flex-basis: 100%;
 }
 
-.box2, .box4 {
+.box2,
+.box4 {
   margin-right: auto;
-}
-.box3, .box5 {
-  margin-left: 100px;
+  margin-left: 0;
 }
 
-p {
-  display: flex;
-  justify-content: right;
-  margin-right: 10px;
+.box3,
+.box5 {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .nav-links {
@@ -210,6 +189,7 @@ ul {
 
 nav a {
   color: #68b7d6;
+  font-size: larger;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -218,4 +198,28 @@ nav a {
   display: flex;
   justify-content: space-evenly;
   min-width: 400px;
+  margin-top: 90px;
 }
+
+@media screen and (max-width: 968px) {
+  .work-container a {
+    flex-basis: 48%;
+  }
+  .subtitle-h2 {
+
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-boxes {
+    flex-direction: column;
+  }
+
+  .work-container a {
+    flex-basis: 100%;
+  }
+
+}
+
+
